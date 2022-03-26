@@ -1,8 +1,8 @@
 -- country tablosunda bulunan country sütunundaki ülke isimlerinden 'A' karakteri ile başlayıp 'a' karakteri ile sonlananları sıralayınız.
-SELECT * FROM country WHERE country LIKE 'A%a'; 
+SELECT country FROM country WHERE country LIKE 'A%a'; 
 
 -- country tablosunda bulunan country sütunundaki ülke isimlerinden en az 6 karakterden oluşan ve sonu 'n' karakteri ile sonlananları sıralayınız.
-SELECT * FROM country WHERE country LIKE '_____n'; 
+SELECT country FROM country WHERE country LIKE '%n' AND length(country) >= 6; 
 
 -- film tablosunda bulunan title sütunundaki film isimlerinden en az 4 adet büyük ya da küçük harf farketmesizin 'T' karakteri içeren film isimlerini sıralayınız.
 SELECT title FROM film WHERE title ILIKE '%t%t%t%t%';
