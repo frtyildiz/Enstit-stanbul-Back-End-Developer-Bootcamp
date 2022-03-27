@@ -61,8 +61,8 @@ UPDATE employee SET birthday = '1995-01-09' WHERE birthday = '1111-11-11';
 UPDATE employee SET email = 'nboydell16@va.gov' WHERE email = 'asjdhas@asdjas.com';
 
 -- Sütunların her birine göre ilgili satırı silecek 5 adet DELETE işlemi yapalım.
-DELETE FROM employee WHERE name > 'Fırat';
-DELETE FROM employee WHERE name > 'James';
-DELETE FROM employee WHERE name > 'Kirk';
+DELETE FROM employee WHERE name = 'Fırat';
+DELETE FROM employee WHERE name = 'James';
+DELETE FROM employee WHERE name = 'Kirk';
 DELETE FROM employee WHERE birthday = '1995-01-09';
 DELETE FROM employee WHERE email = 'asjdhas@asdjas.com';
